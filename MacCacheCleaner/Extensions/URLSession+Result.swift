@@ -54,8 +54,12 @@ extension URLSession {
                 completion(.failure(nil))
                 return
             }
-            if let json = try! JSONSerialization.jsonObject(with: data, options: []) as? T {
-                completion(.success(json))
+            if JSONSerialization.isValidJSONObject(data) {
+                if let json = try! JSONSerialization.jsonObject(with: data, options: []) as? T {
+                    completion(.success(json))
+                } else {
+                    completion(.failure(nil))
+                }
             } else {
                 completion(.failure(nil))
             }
