@@ -10,10 +10,8 @@ import Foundation
 
 extension URL {
     /// Fetches json which has details of all the cache definitions
-    static let sourceJSONPath: URL = "https://raw.githubusercontent.com/kaunteya/MacCacheCleaner/master/Source.json"
-
-//    static let sourceJSONPath: URL = "http://0.0.0.0:9111/Source.json"
+    static let sourceJSONPath: URL = "https://github.com/SharkyRawr/MacCacheCleaner/raw/master/Source.json"
 
     /// Fetches info of `latest` maccachecleaner from github
-    static let latestVersion: URL = "https://api.github.com/repos/kaunteya/maccachecleaner/releases/latest"
+    static let latestVersion: URL = "https://github.com/SharkyRawr/MacCacheCleaner/releases/latest"
 }
