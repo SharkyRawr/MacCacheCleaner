@@ -68,7 +68,6 @@
       "image": "https://www.google.com/chrome/static/images/chrome-logo.svg",
       "locations": [
         "~/Library/Caches/Google/Chrome",
-        "~/Library/Application Support/Google/Chrome",
         "~/Library/Caches/com.google.Chrome"
       ]
     },
